@@ -1,5 +1,5 @@
 import React from "react";
-import "./css/EmployeeCard.css"
+// import "./css/EmployeeCard.css"
 
 //display first name, last name, email, phone number, picture
 function EmployeeCard(props){
