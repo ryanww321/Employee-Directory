@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import API from "./utils/API";
 import EmployeeCard from "./components/EmployeeCard";
+import Header from "./components/Header";
+
 
 var employeeList;
 
@@ -20,6 +22,7 @@ class App extends Component{
   render() {
     return(
       <div>
+      <Header />
         {this.state.employees.map(employee => <EmployeeCard firstName={employee.name.first} lastName={employee.name.last}
         email={employee.email} phone={employee.phone} src={employee.picture.medium}/>)}
       </div>
